@@ -1,0 +1,9 @@
+1. Source code: sumRange.c
+2. Source code --> Preprocessor cpp --> preprocessed c code(gcc -E code.c) , including:
+  * paste the code from header files before the current code;
+  * delete all comments;
+  * Other tricks like macros;
+3. Preprocessed code --> compiler gcc --> program.s(gcc -s code.c) which is the assembly code--human readable machine code
+4. assembly code --> assembler(as) --> program.o (machine code) which is not readable, almost complete but missing 
+memory addresses for functions and variables
+5. machine code --> linker ld with system library --> program.exe(executable file)
