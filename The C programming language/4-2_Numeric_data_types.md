@@ -22,3 +22,11 @@ unsigned type.
 * We can't avoid overflow in compiler, because int calculation needs truncate binary number to get correct answer.
 * In C99, stdint.h provides clear size int, (u)int8(16/32/64)_t variable = value;
 * INT_MIN, INT_MAX gives the smallest/largest value can be stored in int
+* size_t == uint64_t and ptrdiff_t == int64_t;
+* Intergers can be written as:
+  1. usual decimal notation;
+  2. octal: 01, 010=8, 012 = 10
+  3. hexadecimal(base 16): prefixed with 0x
+  4. character constant is a single character or an escape sequence inside single quotes, 'a' == 97, you can calculate 97*97 by 'a' * 'a'
+  5. Put u(unsigned) or l(long) or ll or ul after a integer, like 97u, 87ul, 330000000l
+  
